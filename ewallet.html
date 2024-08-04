@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eWallet - Helpbit Cryptocurrency</title>
+    <link rel="stylesheet" href="ewallet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <span class="logo">HelpBit</span>
+            </div>
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="ewallet.html" class="active">My eWallet</a></li>
+                <li><a href="transact.html">Transactions</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="faucet.html">Faucet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="ewallet">
+        <div class="container">
+            <div class="balance">
+                <p>Balance</p>
+                <div class="balance-amount" id="balance-amount">$ 0.00 HB</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wallet-activity">
+        <div class="container">
+            <h2>Wallet Activity</h2>
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>ID</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Transaction Fee</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionHistory">
+                    <!-- Transaction data populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="ewallet.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,217 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, sans-serif; /* Use Ubuntu font */
+    background-color: #f5f5dc; /* Cream background */
+    color: #333; /* Default text color */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000; /* Black navbar */
+    padding: 10px 0; /* Adjusted padding */
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    margin-right: 40px; /* Increased margin for space between logo and search bar */
+}
+
+.brand .logo {
+    font-size: 1.5em; /* Larger font size for logo/brand */
+    font-weight: bold; /* Optionally, make it bold */
+    color: #fff; /* Text color */
+}
+
+.search-form {
+    flex: 3; /* Take up more space */
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust space between search and nav links */
+}
+
+.search-form input[type="text"] {
+    flex: 1; /* Take up remaining space */
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Equal gap between navbar links */
+    justify-content: space-between; /* Distribute links evenly */
+    align-items: center; /* Center vertically */
+    flex: 5; /* Take up remaining space */
+}
+
+
+.nav-links li a {
+    color: #fff; /* Navbar link color */
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2em; /* Adjusted font size for other links */
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #fff; /* Underline effect for active link */
+}
+
+.login-btn button {
+    padding: 8px 15px;
+    background-color: blue; /* Blue color for login button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* Adjusted font size */
+}
+
+/* Inactive links style */
+.nav-links li span.inactive {
+    color: #ccc; /* Grey color for inactive links */
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px 0; /* Adjusted padding */
+    color: #333;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px; /* Adjust spacing between image and text */
+    margin-top: 10px; /* Adjusted margin top */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.currency-name {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px; /* Increased padding for bigger button */
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+    background-color: #333;
+}
+
+/* Description section styles */
+.description {
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Adjusted padding */
+}
+
+.description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+/* Why Choose section styles */
+.why-choose {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5dc; /* Cream background */
+}
+
+.why-choose h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Card section styles */
+.cards {
+    padding: 50px 0; /* Adjusted padding */
+    background-color: #f5f5dc; /* Cream background for cards */
+}
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: #fff; /* White background for individual cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align content */
+}
+
+.card img {
+    width: 100%; /* Full width within card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px; /* Adjust space below image */
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Footer section styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+} 
+
+

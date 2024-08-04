@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpbit Cryptocurrency</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="left-stripe"></div>
+    <div class="right-stripe"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <span class="logo">HelpBit</span>
+            </div>
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><span class="inactive">My eWallet</span></li>
+                <li><span class="inactive">Transactions</span></li>
+                <li><span class="inactive">Buy</span></li>
+                <li><span class="inactive">Faucet</span></li>
+                <li class="login-btn"><a href="login.html"><button>Login</button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <img src="index.jpg" alt="Helpbit Image">
+            <h1 class="currency-name">HelpBit</h1>
+            <p class="hero-text">Take your first step into finance with us.</p>
+            <a href="register.html" class="get-started-btn">Get started</a>
+        </div>
+    </section>
+
+    <section class="description">
+        <div class="container">
+            <p>HelpBit is a brand new cryptocurrency that is aimed to help the underserved communities integrate their way into finance, as well as help others around the world learn to grow and manage their money. Change starts with you. One BIT at a time.</p>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why should you choose HelpBit?</h2>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="card">
+                <h2>Our Cause</h2>
+                <img src="card1.png" alt="Card 1 Image">
+                <p>HelpBit serves as a gateway cryptocurrency, enabling underserved communities to integrate into crypto and finance affordably.
+                    Even with little knowledge on how to work with their money, HelpBit is here to help them make the first step.   
+                </p>
+            </div>
+            <div class="card">
+                <h2>Affordability</h2>
+                <img src="card2.webp" alt="Card 2 Image">
+                <p>As a brand new cryptocurrency meant to help new users adjust to managing their finance.</p>
+            </div>
+            <div class="card">
+                <h2>First-Come-First-Serve</h2>
+                <img src="card3.jpg" alt="Card 3 Image">
+                <p>The first 500,000 users signed up for HelpBit will be able to claim HB for a discounted price of 10% off! We will work towards helping 
+                    many more hop on the bandwagon of cryptocurrency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <p>&copy; 2024 HelpBit Cryptocurrency. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to prevent default behavior of inactive links
+        document.addEventListener('DOMContentLoaded', function() {
+            const inactiveLinks = document.querySelectorAll('.inactive');
+            inactiveLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    alert('Please login to access this feature.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+

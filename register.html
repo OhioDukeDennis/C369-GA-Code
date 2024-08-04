@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Helpbit Cryptocurrency</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="back-btn">
+                <a href="#" onclick="goBack()">Back</a>
+            </div>
+            <div class="brand">
+                <h1 class="logo">HelpBit</h1>
+            </div>
+        </div>
+    </nav>
+
+    <section class="signup">
+        <div class="container">
+            <h2 class="signup-title">Sign Up</h2>
+            <form class="signup-form" id="signup-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <span class="error-message" id="fullname-error">Please enter your full name.</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error">Please enter your email address.</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error">Please enter a password.</span>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="error-message" id="confirm-password-error">Please confirm your password.</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error-message" id="phone-error">Please enter your phone number.</span>
+                </div>
+                <button type="button" class="next-btn" onclick="validateAndProceed()">Next</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <p>&copy; 2024 HelpBit Cryptocurrency. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="register.js"></script>
+</body>
+</html>
+
+

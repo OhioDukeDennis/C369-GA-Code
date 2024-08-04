@@ -1,0 +1,116 @@
+/* Global styles */
+body {
+    font-family: 'Circular', sans-serif;
+    background-color: #f5f5dc; /* Cream background to match the index page */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000; /* Black navbar */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensure relative positioning for absolute elements */
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 1.5em; /* Consistent font size with the index page */
+    font-weight: bold;
+    color: #fff; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Back button styles */
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-link {
+    color: lightgray; /* Grey color for the back link */
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    background-color: #000; /* Match navbar background */
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.back-link:hover {
+    color: #fff; /* White color on hover */
+    background-color: #333; /* Darker background on hover */
+}
+
+/* OTP page styles */
+.otp {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.otp-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Adjusted text color to match index page */
+}
+
+.otp-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px; /* Increased padding for consistency */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.otp-container p {
+    font-size: 1.2em;
+    color: #333; /* Consistent text color */
+}
+
+#otp-input {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Space below the input field */
+}
+
+#verify-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#verify-btn:hover {
+    background-color: #333;
+}
+
+#timer {
+    font-size: 1.2em;
+    color: #333; /* Consistent color with text */
+    margin-top: 10px;
+}
+

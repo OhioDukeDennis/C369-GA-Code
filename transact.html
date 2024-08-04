@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link rel="stylesheet" href="transact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="left-stripe"></div>
+    <div class="right-stripe"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <span class="logo">HelpBit</span>
+            </div>
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="ewallet.html">My eWallet</a></li>
+                <li><a href="transact.html" class="active">Transactions</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="faucet.html">Faucet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="transaction">
+        <div class="container">
+            <h1>Transaction</h1>
+            <div class="transaction-form-container">
+                <form id="transactionForm">
+                    <div class="form-group">
+                        <label for="recipient-id">Recipient ID</label>
+                        <input type="text" id="recipient-id" name="recipient-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="text" id="amount" name="amount" required>
+                    </div>
+                    <p class="transaction-fee">Transaction fee: 0.0001 HB</p>
+                    <button type="submit" class="get-started-btn">Proceed</button>
+                    <p id="error-message" class="error-message"></p> <!-- Error message element -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="transact.js"></script>
+</body>
+</html>
+
+
+
+
+
+

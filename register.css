@@ -1,0 +1,128 @@
+/* Global styles */
+body {
+    font-family: 'Circular', sans-serif;
+    background-color: #f5f5dc; /* Cream background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000; /* Black navbar */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensure relative positioning for absolute elements */
+}
+
+.brand {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 2em; /* Adjusted font size for brand name */
+    font-weight: bold; /* Optionally, make it bold */
+    color: #fff; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-btn a {
+    color: #666; /* Grey color */
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.back-btn a:hover {
+    color: #444; /* Darker grey on hover */
+}
+
+/* Signup page styles */
+.signup {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.signup-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000; /* Black color for title */
+}
+
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000; /* Black color for labels */
+}
+
+.form-group input {
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    font-size: 0.9em;
+}
+
+.form-group input:invalid + .error-message {
+    display: block;
+}
+
+.next-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #333;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Smaller padding */
+}

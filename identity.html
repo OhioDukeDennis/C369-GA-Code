@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Verification - Helpbit Cryptocurrency</title>
+    <link rel="stylesheet" href="identity.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="back-btn">
+                <a href="#" onclick="history.back();">Back</a>
+            </div>
+            <div class="brand">
+                <h1 class="logo">HelpBit</h1>
+            </div>
+        </div>
+    </nav>
+
+    <section class="signup">
+        <div class="container">
+            <h2 class="signup-title">Identity Verification</h2>
+            <form class="signup-form" id="signup-form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="ic-number">IC Number</label>
+                    <input type="text" id="ic-number" name="ic-number" required>
+                    <span class="error-message" id="ic-number-error">Please enter your IC number.</span>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                    <span class="error-message" id="address-error">Please enter your address.</span>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <span class="error-message" id="dob-error">Please enter your date of birth.</span>
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality</label>
+                    <input type="text" id="nationality" name="nationality" required>
+                    <span class="error-message" id="nationality-error">Please enter your nationality.</span>
+                </div>
+                <button type="submit" class="next-btn">Next</button>
+            </form>
+            <p class="scan-text"><a href="#" id="scan-link">Scan your IC, we'll do the rest</a></p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <p>&copy; 2024 HelpBit Cryptocurrency. All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="identity.js"></script>
+</body>
+</html>
+
+

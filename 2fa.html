@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Factor Authentication</title>
+    <link rel="stylesheet" href="2fa.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <h1 class="logo">Your Logo</h1>
+            </div>
+        </div>
+    </nav>
+
+    <section class="two-factor-auth">
+        <div class="container">
+            <h2 class="auth-title">Complete 2FA Before Finalizing Your Purchase</h2>
+            <div class="auth-container">
+                <p>Take a picture of IC <img src="camera-icon.png" alt="Camera Icon"></p>
+                <p>OR</p>
+                <form id="otp-form">
+                    <input type="text" id="otp-input" placeholder="Enter OTP" required>
+                    <button type="button" id="generate-otp-btn">Generate OTP</button>
+                    <div id="timer">30s</div>
+                </form>
+            </div>
+            <button type="button" id="verify-btn" class="get-started-btn">Enter</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="2fa.js"></script>
+</body>
+</html>
+

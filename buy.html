@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Currency - Helpbit Cryptocurrency</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <h1 class="logo">HelpBit</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Profile</a></li>
+                <li><a href="ewallet.html">eWallet</a></li>
+                <li><a href="transact.html">Transactions</a></li>
+                <li><a href="buy.html" class="active">Buy</a></li>
+                <li><a href="#">Faucet</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="buy">
+        <div class="container">
+            <h2 class="buy-title">Buy Currency</h2>
+            <form class="buy-form" id="buy-form">
+                <div class="form-group">
+                    <label for="country">Choose Country</label>
+                    <select id="country" name="country">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="text" id="amount" name="amount" placeholder="Enter amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="converted-amount">Converted Amount</label>
+                    <input type="text" id="converted-amount" name="converted-amount" readonly>
+                </div>
+                <div class="form-group">
+                    <p id="conversion-text">You will receive 0 HB for 0 (Select Country).</p>
+                </div>
+                <button type="submit" class="proceed-btn">Proceed</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="buy.js"></script>
+</body>
+</html>
+
+
+
+

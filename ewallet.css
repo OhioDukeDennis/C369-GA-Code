@@ -1,0 +1,134 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Circular', sans-serif; /* Use Circular font */
+    background-color: #f5f5dc; /* Cream background */
+    color: #333; /* Default text color */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000; /* Black navbar */
+    padding: 10px 0; /* Adjusted padding */
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand .logo {
+    font-size: 1.5em; /* Larger font size for logo/brand */
+    font-weight: bold;
+    color: #fff;
+}
+
+.search-form {
+    flex: 3; /* Take up more space */
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Adjust space between search and nav links */
+}
+
+.search-form input[type="text"] {
+    flex: 1; /* Take up remaining space */
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1em; /* Adjusted font size */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px; /* Equal gap between navbar links */
+    justify-content: space-between; /* Distribute links evenly */
+    align-items: center; /* Center vertically */
+    flex: 5; /* Take up remaining space */
+}
+
+.nav-links li a {
+    color: #fff; /* Navbar link color */
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2em; /* Adjusted font size for links */
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #fff; /* Underline effect for active link */
+}
+
+/* eWallet section styles */
+.ewallet {
+    padding: 50px 0; /* Adjusted padding */
+    text-align: center; /* Center align the text */
+}
+
+.balance {
+    font-size: 1.5em;
+}
+
+.balance-amount {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Wallet Activity section styles */
+.wallet-activity {
+    padding: 50px 0;
+}
+
+.wallet-activity h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff; /* White background for the entire table */
+}
+
+.transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: #f4f4f4; /* Light grey background for headers */
+    font-weight: bold;
+}
+
+.transaction-table td {
+    background-color: #fff; /* White background for table cells */
+}
+
+
+

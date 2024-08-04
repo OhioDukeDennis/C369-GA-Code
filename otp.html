@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Time Password - Helpbit Cryptocurrency</title>
+    <link rel="stylesheet" href="otp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Circular:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="back-btn">
+                <a href="login.html" class="back-link">Back</a>
+            </div>
+            <div class="brand">
+                <h1 class="logo">HelpBit</h1>
+            </div>
+        </div>
+    </nav>
+
+    <section class="otp">
+        <div class="container">
+            <h2 class="otp-title">One-Time Password</h2>
+            <div class="otp-container">
+                <p id="otp-code">Generating OTP...</p>
+                <form id="otp-form">
+                    <input type="text" id="otp-input" placeholder="Enter OTP">
+                    <button type="button" id="verify-btn">Verify</button>
+                    <p id="timer">30s</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="otp.js"></script>
+</body>
+</html>
+
+
